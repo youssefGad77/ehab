@@ -1,0 +1,28 @@
+﻿<Page x:Class="LibrarySystem.SignUpPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LibrarySystem"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SignUpPage" Background="AliceBlue">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Sign Up" FontSize="33" FontWeight="Bold" FontFamily="Arial Rounded MT Bold" Margin="300,0,300,75" />
+        <Label Content="Name :" FontSize="25" FontWeight="Bold" Margin="46,102,624,10"/>
+        <TextBox Name="txtName" Width="416" Height="31" Margin="160,110,224,9"/>
+        <Label Content="Email :" FontSize="25" FontWeight="Bold" Margin="46,10,624,102" Grid.Row="1"/>
+        <TextBox Name="txtEmail" Width="416" Height="31" Margin="160,17,224,102" Grid.Row="1"/>
+        <Label Content="Password :" FontSize="25" FontWeight="Bold" Margin="20,56,637,56" Grid.Row="1"/>
+        <TextBox Name="txtPass" Width="416" Height="31" Margin="160,64,224,55" Grid.Row="1"/>
+        <Label Content="Confirm Password :" FontSize="25" FontWeight="Bold" Margin="10,102,546,10" Grid.Row="1"/>
+        <TextBox Name="txtCPass" Width="416" Height="31" Margin="259,109,125,10" Grid.Row="1"/>
+        <Button Content="SIGN UP" HorizontalAlignment="Left" Margin="275,44,0,0" Grid.Row="2" VerticalAlignment="Top" Height="48" Width="162" FontWeight="Bold" FontSize="17" Background="Black" Foreground="White" Click="SignUpButton" />
+    </Grid>
+</Page>
